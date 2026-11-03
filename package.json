@@ -1,0 +1,28 @@
+{
+  "name": "burrowkeep",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 8765",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 8765",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/economy.test.ts",
+    "test:browser": "node scripts/verify-browser.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@types/node": "22.19.0",
+    "typescript": "5.9.3",
+    "tsx": "4.20.6",
+    "vite": "7.2.2",
+    "playwright": "1.56.1",
+    "@axe-core/playwright": "4.11.0"
+  }
+}
